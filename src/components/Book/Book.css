@@ -1,0 +1,188 @@
+.book {
+
+    padding: 70px 0;
+
+    border-top: var(--border);
+
+}
+
+.book__content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex-wrap: wrap;
+
+    gap: 34px;
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .book__content {
+
+        align-items: center;
+
+        flex-direction: row;
+
+        margin-bottom: 34px;
+
+    }
+
+}
+
+.book-image {
+
+    width: 100%;
+
+    padding: 17px;
+
+    background-color: var(--white-color);
+
+    border-radius: var(--border-radius);
+
+    text-align: center;
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .book-image {
+
+        width: 30%;
+
+    }
+
+}
+
+.book-image img {
+
+    width: 100%;
+
+    object-fit: contain;
+
+    display: flex;
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .book-info {
+
+        flex: 1;
+
+    }
+
+}
+
+.book-title,
+.book-author {
+
+    margin-bottom: 17px;
+
+    font-size: 17px;
+
+    color: var(--text-color);
+
+}
+
+.book-author {
+
+    font-weight: 500;
+
+}
+
+.book-author span {
+
+    font-size: 17px;
+
+    color: var(--secondary-color);
+
+}
+
+.book-add-to-cart {
+
+    margin: 17px 0;
+
+    display: flex;
+
+}
+
+.book-add-to-cart input {
+
+    width: calc(100% - 150px);
+
+    height: 40px;
+
+    padding: 0 17px;
+
+    border: var(--border);
+
+}
+
+.book-add-to-cart-btn {
+
+    height: 40px;
+
+    width: 150px;
+
+    border: var(--border);
+
+    border-left: none;
+
+    background-color: transparent;
+
+    cursor: pointer;
+
+}
+
+.book-add-to-cart-btn i {
+
+    margin-right: 5px;
+
+}
+
+.book-footer-info {
+
+    margin-top: 17px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 27px;
+
+}
+
+@media screen and (min-width: 576px) {
+    
+    .book-footer-info {
+
+        flex-direction: row;
+
+    }
+
+}
+
+.book-foot-info small,
+.book-foot-info i,
+.book-foot-info b {
+
+    display: block;
+
+    font-size: 17px;
+
+    text-align: center;
+
+    font-weight: 500;
+
+}
+
+.book-foot-info i {
+
+    font-size: 27px;
+
+    color: var(--secondary-color);
+
+}

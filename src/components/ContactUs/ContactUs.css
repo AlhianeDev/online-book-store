@@ -1,0 +1,174 @@
+.contact-us {
+
+    padding: 70px 0;
+
+    border-top: var(--border);
+
+}
+
+.contact-us__info {
+
+    padding-bottom: 40px;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+
+    gap: 34px;
+
+    border-bottom: var(--border);
+
+}
+
+.contact-us__info-item {
+
+    text-align: center;
+
+}
+
+.contact-us__info-item__icon {
+
+    font-size: 27px;
+
+    color: var(--secondary-color);
+
+}
+
+.contact-us__info-item__title {
+
+    margin: 7px 0;
+
+    font-size: 21px;
+
+    font-weight: 500;
+
+    color: var(--text-color);
+
+}
+
+.contact-us__info-item__desc {
+
+    font-weight: 500;
+
+    color: var(--text-color);
+
+}
+
+.contact-us__form {
+
+    padding-top: 34px;
+
+}
+
+.contact-us__form-title {
+
+    width: fit-content;
+
+    margin-bottom: 17px;
+
+    padding: 0 3px 3px;
+
+    border-bottom: 2px solid var(--secondary-color);
+
+    font-size: 21px;
+
+    color: var(--text-color);
+
+}
+
+@media screen and (min-width: 768px) {
+    
+    .contact-us__form-title {
+
+        font-size: 27px;
+
+    }
+
+}
+
+.contact-us__form > div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 17px;
+
+    flex-wrap: wrap;
+
+}
+
+@media screen and (min-width: 768px) {
+    
+    .contact-us__form > div {
+
+        flex-direction: row;
+
+    }
+
+}
+
+.contact-us__form input,
+.contact-us__form textarea {
+
+    width: 100%;
+
+    border: var(--border);
+
+    border-radius: var(--border-radius);
+
+}
+
+.contact-us__form input {
+
+    height: 50px;
+
+    padding: 0 17px;
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .contact-us__form input {
+
+        width: calc(33.3333337% - 12px);
+    
+    }
+
+}
+
+.contact-us__form textarea {
+
+    height: 120px;
+
+    padding: 12px 17px;
+
+    resize: none;
+
+}
+
+.contact-us__form textarea:focus {
+
+    outline: none;
+
+}
+
+.contact-us__form button {
+
+    width: 150px;
+
+    height: 50px;
+
+    margin-top: 17px;
+
+    background-color: var(--secondary-color);
+
+    border: none;
+
+    border-radius: var(--border-radius);
+
+    color: var(--white-color);
+
+    cursor: pointer;
+
+}

@@ -1,0 +1,274 @@
+ .book-modal-container {
+
+    position: fixed;
+
+    z-index: 1111;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+    
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: rgb(0 0 0 / 70%);
+    
+}
+
+.book-modal-content {
+
+    position: relative;
+
+    width: calc(100% - 30px);
+
+    padding: 57px 17px 17px;
+
+    display: flex;
+
+    gap: 34px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: var(--white-color);
+
+    border-radius: var(--border-radius);
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .book-modal-content {
+
+        width: 70%;
+
+    }
+
+}
+
+.book-modal-close-btn {
+
+    position: absolute;
+
+    top: 17px;
+
+    right: 12px;
+
+    display: block;
+
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: var(--rounded);
+
+    background-color: var(--secondary-color);
+
+    cursor: pointer;
+
+}
+
+.book-modal-close-btn i {
+
+    font-size: 27px;
+
+    color: var(--white-color);
+
+}
+
+.book-modal__img {
+
+    margin-top: 17px;
+
+    width: 40%;
+
+    height: 100%;
+
+    display: none;
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .book-modal__img {
+
+        display: initial;
+
+    }
+    
+}
+
+.book-modal__img img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+}
+
+.book-modal__info {
+
+    margin-top: 17px;
+
+    flex: 1;
+
+}
+
+.book-modal__book-title {
+
+    margin-bottom: 17px;
+
+    font-size: 17px;
+
+    color: var(--text-color);
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .book-modal__book-title {
+
+        font-size: 27px;
+
+    }
+
+}
+
+.book-modal__book-status {
+
+    margin-bottom: 17px;
+
+    font-size: 17px;
+
+    color: var(--text-color);
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .book-modal__book-status,
+    .book-modal__book-author,
+    .book-modal__book-price {
+
+        font-size: 21px;
+
+    }
+
+}
+
+.book-modal__book-author,
+.book-modal__book-price {
+
+    margin: 17px 0;
+    
+    font-size: 17px;
+
+    font-weight: 500;
+
+    color: var(--secondary-color);
+
+}
+
+.book-modal__book-author b,
+.book-modal__book-price b {
+
+    font-size: 17px;
+
+    color: var(--text-color);
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .book-modal__book-author b,
+    .book-modal__book-price b {
+
+        font-size: 19px;
+
+    }
+
+}
+
+.book-modal__book-price {
+
+    margin-top: 0;
+
+}
+
+.book-modal__book-add-to-cart {
+
+    margin-bottom: 17px;
+
+    display: flex;
+
+}
+
+.book-modal__book-add-to-cart input {
+
+    width: calc(100% - 150px);
+
+    height: 40px;
+
+    padding: 0 17px;
+
+    border: var(--border);
+
+}
+
+.book-modal__book-add-to-cart-btn {
+
+    height: 40px;
+
+    width: 150px;
+
+    border: var(--border);
+
+    border-left: none;
+
+    background-color: transparent;
+
+    cursor: pointer;
+
+}
+
+.book-modal__book-add-to-cart-btn i {
+
+    margin-right: 5px;
+
+}
+
+.book-modal__book-see-more-details-link {
+
+    margin-top: 21px;
+
+    display: block;
+
+    background-color: var(--secondary-color);
+
+    height: 40px;
+
+    line-height: 40px;
+
+    text-align: center;
+
+    border-radius: var(--border-radius);
+
+    color: var(--white-color);
+
+}

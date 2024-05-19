@@ -1,0 +1,194 @@
+.book-slider {
+
+    position: relative;
+
+    display: flex;
+
+    width: 100%;
+
+    min-height: 500px;
+
+    overflow: hidden;
+
+    background-color: var(--white-color);
+
+}
+
+.book-slider:last-of-type {
+
+    padding-bottom: 112px;
+
+}
+
+.book-slider__slides {
+
+    height: 100%;
+
+    display: flex;
+
+    transition: transform .4s linear;
+
+}
+
+.book-slider__slide {
+
+    padding: 17px 7px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: var(--primary-color);
+
+}
+
+.book-slider__slide:nth-child(even) {
+
+    background-color: #ccc;
+
+}
+
+.book-slider__slide-img {
+
+    width: 60%;
+
+    object-fit: contain;
+
+}
+
+.book-slider__slide-title {
+    
+    margin: 17px 0;
+
+    font-size: 17px;
+
+    text-align: center;
+
+    color: var(--text-color);
+
+}
+
+.book-slider__slide-rating {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+}
+
+
+.book-slider__slide-rating__stars i {
+
+    margin: 0 3px;
+
+    font-size: 21px;
+
+    color: var(--secondary-color);
+
+}
+
+.book-slider__slide-price {
+
+    margin: 17px 0;
+
+    font-size: 21px;
+
+    color: var(--secondary-color);
+
+}
+
+.book-slider__slide-actions {
+
+    display: flex;
+
+    gap: 17px;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: 100%;
+
+    padding-top: 17px;
+
+    border-top: var(--border);
+
+}
+
+.book-slider__slide-action {
+
+    border: none;
+
+    background-color: transparent;
+
+    cursor: pointer;
+
+}
+
+.book-slider__slide-action i {
+
+    font-size: 21px;
+
+    color: var(--text-color);
+
+}
+
+.book-slider__left-arrow,
+.book-slider__right-arrow {
+
+    position: absolute;
+
+    z-index: 1;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 50px;
+
+    height: 70px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: var(--border-radius);
+
+    background-color: var(--secondary-color);
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+.book-slider__left-arrow {
+
+    left: 15px;
+
+}
+
+.book-slider__right-arrow {
+
+    right: 15px;
+
+}
+
+.book-slider__left-arrow i,
+.book-slider__right-arrow i {
+
+    color: var(--white-color);
+
+    font-size: 27px;
+
+    line-height: 50px;
+
+}

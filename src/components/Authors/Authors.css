@@ -1,0 +1,73 @@
+.authors {
+
+    padding: 70px 0;
+
+    border-top: var(--border);
+
+}
+
+.authors__search-form {
+
+    margin-bottom: 34px;
+
+}
+
+.authors__search-form input {
+
+    width: 100%;
+
+    height: 50px;
+
+    padding: 0 17px;
+
+    border-radius: var(--border-radius);
+
+    border: none;
+
+}
+
+.authors__wrapper {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+
+    gap: 34px;
+
+}
+
+.author {
+
+    padding: 17px;
+
+    background-color: var(--white-color);
+
+    border-radius: var(--border-radius);
+
+}
+
+.author-image {
+
+    display: flex;
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: var(--border-radius);
+
+}
+
+.author-name {
+
+    margin-top: 17px;
+
+    text-align: center;
+
+    font-size: 17px;
+
+    color: var(--text-color);
+
+}
